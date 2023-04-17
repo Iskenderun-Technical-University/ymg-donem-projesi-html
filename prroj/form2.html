@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
 <title>RedStore Ecommerce Website Design</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +21,7 @@
 <img src ="images/logo.png" width="125px">
 </div>
 <nav>
-<ul>
+<ul id="menuİtems">
 <li><a href= "">Home</li>
 <li><a href= "">Products </li>
 <li><a href= "">About </li>
@@ -29,7 +31,8 @@
 
 </nav>
 <img src ="images/cart.png" width="30px" height="30px">
-<img src ="images/menu.png" class="menu-icon">
+<img src ="images/menu.png" class="menu-icon"
+ onclick="menutoggle()">
 </div>
 <div class="row">
 <div class="col-2">
@@ -355,5 +358,24 @@ be.</small>
 		 <p class="copyright">copyright 2023 - MNS</p>
 	   </div>
 	 </div>
+ <!------------js for togglr menu---------->
+       <script>
+	   var menuİtems = document.getElementByİd("menuİtems");
+	   
+	   menuİtems.style.maxHeight ="0px";
+	   
+	   function menutoggle(){
+	       if(Menuİtems.style.maxHeight == "0px")
+		    {
+		     Menuİtems.style.maxHeight = "200px";
+		    }
+			else
+			{
+			 Menuİtems.style.maxHeight = "0px";
+			}
+	   }
+	   </script>
+	   
+	   
 </body>
 </html>
