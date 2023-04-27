@@ -45,7 +45,7 @@ scale=1.0">
 <div class ="samll-container single-product">
 <div class ="row">
    <div class = "col-2">
-     <img src="images/gallery-1.jpg" width ="50%" id="product-img">
+     <img src="images/gallery-1.jpg" width ="50%" id="productImg">
 	 <div class ="small-img-row">
 	    <div class= "small-img-col">
 		   <img src ="images/gallery-1.jpg" width ="100%" class="small-img">
@@ -198,7 +198,27 @@ scale=1.0">
 			}
 	   }
 	   </script>
+	  <!----------------js for product gallery----------->
+	   <script>
+	   var productImg = document.getElementById("productImg");
+	   var smallImg = document.getElementsByClassName("small-img");
 	   
-	   
+	     samllImg[0].onclick = function ()
+		 {
+		   productImg.src = samllImg[0].src;
+		 }
+		samllImg[1].onclick = function ()
+		 {
+		   productImg.src = samllImg[1].src;
+		 }
+		samllImg[2].onclick = function ()
+		 {
+		  productImg.src = samllImg[2].src;
+		 }
+		samllImg[3].onclick = function ()
+		 {
+		   productImg.src = samllImg[3].src;
+		 }
+	   </script>
 </body>
 </html>
