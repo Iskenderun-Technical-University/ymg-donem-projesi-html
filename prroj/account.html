@@ -47,8 +47,9 @@ scale=1.0">
 	<div class="col-2">
       <div class="form-container">
 	   <div class="form-btn">
-	    <span>Login</span>
-		<span>Register</span>
+	    <span onclick="login()">Login</span>
+		<span onclick="register()" >Register</span>
+		<hr id="İndicator">
 	  </div>
 	    <form id="LoginForm">
 	       <input type="text" placeholder="Username">
@@ -125,6 +126,29 @@ scale=1.0">
 			}
 	   }
 	   </script>
+	   
+ <!------------js for togglr form----------> 
+	<script>
+	
+	var LoginForm = document.getElementByİd("LoginForm");
+	var RegForm = document.getElementByİd("RegForm");
+	var İndicator = document.getElementByİd("İndicator");
+	
+	function register(){
+	
+	RegForm.style.transform = "translateX(0px)";
+	LoginForm.style.transform = "translateX(0px)";
+	İndicator.style.transform = "translateX(100px)";
+	}
+	
+	function login(){
+	RegForm.style.transform = "translateX(300px)";
+	LoginForm.style.transform = "translateX(300px)";
+	İndicator.style.transform = "translateX(0px)";
+	}
+	
+    </script>	
+	   
 	 
 </body>
 </html>
