@@ -28,44 +28,41 @@ scale=1.0">
 <li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/caa.html"> shopping basket</a></li>
 <li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/account.html">Account</a> </li>
 </ul>
-
 </nav>
-
 </div>
 </div>
 
+<div style= "text-align:center;">
 
- <!----------account-page------>
- <div class="account-page">
-  <div class="container">
-   <div class="row">
-    <div class="col-2">
-      <img src="images/image1.png" width="100%">
-    </div>
-	<div class="col-2">
-      <div class="form-container">
-	   <div class="form-btn">
-	    <span onclick="login()">Login</span>
-		<span onclick="register()">Register</span>
-		<hr id="Indicator">
-	  </div>
-	    <form id="LoginForm">
-	       <input type="text" placeholder="Username">
-		   <input type="password" placeholder="password">
-		   <button type="submit" class="btn">Login</button>
-		   <a href="">Forgot password</a>
-	    </form>
-		<form id="RegForm">
-	       <input type="text" placeholder="Username">
-		   <input type="email" placeholder="Email">
-		   <input type="password" placeholder="password">
-		   <button type="submit" class="btn">Register</button>
-	    </form>
-	  </div>
-    </div>
-   </div>
-  </div>
- </div>
+<p>
+
+Biz çocuk giyim ve aksesuarları satan bir online mağazayız.<br>
+ Mağazamız Türkiye'de bulunmakta ve bebeklerden gençlerin ergenlik<br>
+ çağına kadar geniş bir yelpazede moda ve çeşitli ürünler sunmaktadır.<br>
+
+Online mağazamız, çocuk modası konusunda deneyimli ve profesyonel bir<br> 
+ekip tarafından yönetilmektedir. Yüksek kaliteli ve dayanıklı ürünler <br>
+sunarak çocukların konforunu göz önünde bulundurur. Ayrıca, müşterilerin <br>
+alışveriş işlemini kolaylaştırmak için çoklu ödeme ve sevkiyat seçenekleri
+ sunmaktayız.<br>
+
+Online mağazamız, müşteri güvenliği ve gizliliğini sağlamak için modern
+ teknolojiler kullanmaktadır.<br>
+
+Müşteriler, online mağazamızı ziyaret ederek mevcut ürün ve tasarımlara <br>
+göz atabilir, kolaylıkla ve güvenli bir şekilde çevrimiçi ödeme yapabilirler.<br>
+ Mağazamız ayrıca Türkiye'nin farklı bölgelerindeki <br>müşterilere hızlı kargo hizmeti sunmaktadır.
+ <br>
+ <br>
+ <br>
+</p>
+</div>
+
+
+
+
+
+
 
  <!----------footer------>
      <div class="footer">
@@ -98,7 +95,7 @@ scale=1.0">
 		   <ul>
 		   <li>Facebook</li>
 		   <li>Twitter</li>
-		   <li>Instagram</li>
+		   <li>İnstagram</li>
 		   <li>Youtube</li>
 		   </ul>
 		  </div>
@@ -107,46 +104,5 @@ scale=1.0">
 		 <p class="copyright">copyright 2023 - MNS</p>
 	   </div>
 	 </div>
- <!------------js for togglr menu---------->
-       <script>
-	   var menuItems = document.getElementById("menuItems");
-	   
-	   menuItems.style.maxHeight ="0px";
-	   
-	   function menutoggle(){
-	       if(MenuItems.style.maxHeight == "0px")
-		    {
-		     MenuItems.style.maxHeight = "200px";
-		    }
-			else
-			{
-			 MenuItems.style.maxHeight = "0px";
-			}
-	   }
-	   </script>
-	   
- <!------------js for togglr form----------> 
-	<script>
-	
-	var LoginForm = document.getElementById("LoginForm");
-	var RegForm = document.getElementById("RegForm");
-	var Indicator = document.getElementById("Indicator");
-	
-	function register(){
-	
-	RegForm.style.transform = "translateX(0px)";
-	LoginForm.style.transform = "translateX(0px)";
-	Indicator.style.transform = "translateX(100px)";
-	}
-	
-	function login(){
-	RegForm.style.transform = "translateX(300px)";
-	LoginForm.style.transform = "translateX(300px)";
-	Indicator.style.transform = "translateX(0px)";
-	}
-	
-    </script>
-	   
-	 
 </body>
 </html>
