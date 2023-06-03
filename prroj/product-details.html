@@ -21,46 +21,41 @@ scale=1.0">
 <img src ="images/logo.png" width="180px">
 </div>
 <nav>
-<ul id="menuİtems">
-<li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/form2.html">Home</li>
-<li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/prodoctss.html">Products </li>
-<li><a href= "">About </li>
-<li><a href= "">Contact </li>
-<li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/account.html">Account </li>
+<ul id="menuItems">
+<li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/form2.html">Home</a></li>
+<li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/prodoctss.html">Products </a></li>
+<li><a href= "">About</a></li>
+<li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/caa.html">shopping basket</a> </li>
+<li><a href= "file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/account.html">Account </a></li>
 </ul>
 
 </nav>
-<img src ="images/cart.png" width="30px" height="30px">
-<img src ="images/menu.png" class="menu-icon"
- onclick="menutoggle()">
+
 </div>
 </div>
-
-
-
 
 <!---------------------single product details------------------------>
-
-
-<div class ="samll-container single-product">
+<div class ="small-container single-product">
 <div class ="row">
    <div class = "col-2">
-     <img src="images/gallery-1.jpg" width ="30%" id="Product-img">
+     <img src="images/gallery-1.jpg" width ="70%"  id="productImg">
+	 </div>
 	 <div class ="small-img-row">
 	    <div class= "small-img-col">
-		   <img src ="images/gallery-1.jpg" width ="100%" class="small-img">
+		   <img src ="images/gallery-1.jpg" width ="90%" height="100%" class="small-img">
 		   </div>
 		   <div class= "small-img-col">
-		   <img src ="images/gallery-2.jpg" width ="100%"class="small-img">
+		   <img src ="images/gallery-2.jpg" width ="90%" height="100%" class="small-img">
 		   </div>
 		   <div class= "small-img-col">
-		   <img src ="images/gallery-3.jpg" width ="100%"class="small-img">
+		   <img src ="images/gallery-3.jpg" width ="90%" height="100%" class="small-img">
 		   </div>
 		   <div class= "small-img-col">
-		   <img src ="images/gallery-4.jpg" width ="100%"class="small-img">
+		   <img src ="images/gallery-4.jpg" width ="90%" height="100%" class="small-img">
 		   </div>
 		   </div>
 	 </div>
+	 
 	 <div class="col-2">
 	     <p>Home / T-Shirt </p>
 		 <h1>Red printd T-Shirt by HRX </h1>
@@ -74,7 +69,7 @@ scale=1.0">
 		 <option> S </option>
 		 </select>
 		 <input type ="number"value="1">
-		 <a herf="" class="btn">Add To Cart </a>
+		 <a href ="file:///C:/Users/suaad%20abduljal%C4%B1l/OneDrive/Masa%C3%BCst%C3%BC/ymg-donem-projesi-html/prroj/CART.html" class="btn">Add To Cart </a>
 		 <h3>product Details <i class="fa fa-indent"></i></h3>
 		 <br>
 		 <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-shirt .
@@ -189,41 +184,41 @@ scale=1.0">
 	 </div>
  <!------------js for togglr menu---------->
        <script>
-	   var menuİtems = document.getElementByİd("menuİtems");
+	   var menuItems = document.getElementById("menuItems");
 	   
-	   menuİtems.style.maxHeight ="0px";
+	   menuItems.style.maxHeight ="0px";
 	   
 	   function menutoggle(){
-	       if(Menuİtems.style.maxHeight == "0px")
+	       if(MenuItems.style.maxHeight =="0px")
 		    {
-		     Menuİtems.style.maxHeight = "200px";
+		     MenuItems.style.maxHeight = "200px";
 		    }
 			else
 			{
-			 Menuİtems.style.maxHeight = "0px";
+			 MenuItems.style.maxHeight = "0px"
 			}
 	   }
 	   </script>
 	  <!----------------js for product gallery----------->
 	   <script>
 	     var ProductImg = document.getElementById("productImg");
-	     var smallImg = document.getElementsByClassName("small-img");
+	     var SmallImg = document.getElementsByClassName("Small-img");
 	   
-	     samllImg[0].onclick = function ()
+	     SmallImg[0].onclick = function ()
 		 {
-		   ProductImg.src = samllImg[0].src;
+		   ProductImg.src = SmallImg[0].src;
 		 }
-		samllImg[1].onclick = function ()
+		SmallImg[1].onclick = function ()
 		 {
-		   productImg.src = samllImg[1].src;
+		   productImg.src = SmallImg[1].src;
 		 }
-		samllImg[2].onclick = function ()
+		SmallImg[2].onclick = function ()
 		 {
-		  ProductImg.src = samllImg[2].src;
+		  ProductImg.src = SmallImg[2].src;
 		 }
-		samllImg[3].onclick = function ()
+		SmallImg[3].onclick = function ()
 		 {
-		   ProductImg.src = samllImg[3].src;
+		   ProductImg.src = SmallImg[3].src;
 		 }
 	   </script>
 </body>
